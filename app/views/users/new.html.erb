@@ -1,0 +1,10 @@
+<h1>register as a writer</h1>
+<%= form_for (@user) do |f| %>
+<%= f.text_field :first_name, palceholder: 'enter your first name' %><br>
+<%= f.text_field :last_name, palceholder: 'enter your first name' %><br>
+<%= f.text_field :email, palceholder: 'enter your first name' %><br>
+<%= f.label  :photo, 'upload phoot' %><br>
+<%=f.text_area :bio, placeholder: 'wirte a quick bio' %><br>
+
+<%= f.submit 'submit' %>
+<% end %>
